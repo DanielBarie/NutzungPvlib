@@ -28,7 +28,7 @@ Die Simulation komplexer Syteme arbeitet mit Modellen der einzelnen Systemkompon
 
 Als Minimum kann in der Simulation die Betrachtung der Solarmodule und des Wechselrichters erfolgen. Weitere Modelle können beispielsweise Verluste der Verkabelung oder Fehlanpassungen zwischen den Komponenten und / oder dem Energienetz nachbilden. 
 
-Die einzelnen Solarmodule wiederum bestehen aus einer Vielzahl von Solarzellen. Daher werden die Solarmodule für die Simulation wiederum in einzelne Zellen zerlegt. Dieser Schritt erfordert ein Modell für die Solarzellen, die im Grunde nichts weiter als Halbleiterdioden sind. 
+Die einzelnen Solarmodule wiederum bestehen aus einer Vielzahl von Solarzellen. Daher werden die Solarmodule für die Simulation teils wiederum in einzelne Zellen zerlegt. Dieser Schritt erfordert ein Modell für die Solarzellen, die im Grunde nichts weiter als Halbleiterdioden sind. 
 
 Es sind also unterschiedliche Detaillierungsgrade der Modellierung möglich, zum einen nach betrachteten Komponenten und darüberhinaus nach Betrachtungstiefe der einzelnen Komponenten.
 
