@@ -30,6 +30,12 @@ Als Minimum kann in der Simulation die Betrachtung der Solarmodule und des Wechs
 
 Die einzelnen Solarmodule wiederum bestehen aus einer Vielzahl von Solarzellen. Daher werden die Solarmodule für die Simulation wiederum in einzelne Zellen zerlegt. Dieser Schritt erfordert ein Modell für die Solarzellen, die im Grunde nichts weiter als Halbleiterdioden sind. 
 
+Es sind also unterschiedliche Detaillierungsgrade der Modellierung möglich, zum einen nach betrachteten Komponenten und darüberhinaus nach Betrachtungstiefe der einzelnen Komponenten.
+
+Für die Solarmodule bietet pvLib zwei Simulationsmodelle an:
+- Sandia: Mit einer Vielzahl von Parametern basiert das Sandia Model auf zahlreichen Messungen realer Module und berücksichtigt u.a. die spektrale Zusammensetzung des einfallenden Lichts. Eine Anwendung des Modells ist nur möglich, wenn alle Parameter für ein Modul vorliegen. Die Übertragung des Modells auf andere (nicht vermessene) Module scheitert regelmäßig (https://www.pvsyst.com/help/sandia_model.htm).
+- CEC (California Energy Commission), sog. Six-Parameter-Model (weil sechs Parameter verwendet werden, um ein Modul zu charaktierisieren). Das Six-Parameter-Model basiert auf einem vorangehenden Five-Parameter-Model (De Soto Model). Beide Modelle beschreiben das Verhalten der Zell-Dioden in einem Solarmodul. Durch das Hinzufügen eines weiteren Parameters (von fünf auf sechs), versucht das CEC-Model temperaturabhängige Effekte besser zu erfassen. Durch die Bezugnahme auf die Charakteristik einzelner Dioden und Skalierung derselben auf ein ganzes Modul kann eine Abschätzung der für das Modell erforderlichen Parameter im Falle nicht katalogisierter Module Erfolg haben. 
+
 # Ressourcen:
 - Arizona State University; https://www.pveducation.org/pvcdrom/welcome-to-pvcdrom 
 - Sandia Labs; Report Nr. 3535, Photovoltaic Array Performance Model; https://energy.sandia.gov/wp-content/gallery/uploads/SAND-2004_PV-Performance-Array-Model.pdf
