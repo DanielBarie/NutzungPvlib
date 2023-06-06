@@ -2,13 +2,13 @@
 Nutzung von pvLib zur Simulation deutscher PV-Anlagen.
 
 # Motivation
-PV-Anagen sind komplexe Systeme mit vielen einzelnen Komponenten. Das Verhalten der Komponenten muss einzeln und im Zusammenspiel betrachtet werden. Dazu sind umfangreichen Daten zu Solarmodulen und Wechselrichtern sowie Wetterdaten notwendig. Aufrund der Komplexität erfolgt vor dem Aufbau einer PV-Anlage regelmäßig eine Simulation.  
+PV-Anagen sind komplexe Systeme mit vielen einzelnen Komponenten. Das Verhalten der Komponenten muss einzeln und im Zusammenspiel betrachtet werden. Dazu sind umfangreichen Daten zu Solarmodulen und Wechselrichtern sowie Wetterdaten notwendig. Aufrund der Komplexität erfolgt vor dem Aufbau einer PV-Anlage regelmäßig eine Simulation, die Datenmodelle für die Komponenten erfordert.  
 
 Verfügbare Programme zur Simulation von PV-Anlagen sind oft nicht frei zu nutzen. Beispiele dafür sind:
 - PVsyst (Schweizer Programm), Lizenz für 600 CHF pro Jahr (https://www.pvsyst.com/shop-prices/)
 - PV\*SOL (deutsches Programm), Lizenz einmalig 850 Euro plus Wartungsgebühr von 160€/Jahr (https://valentin-software.com/produkte/pvsol/)  
 
-Diese kommerziellen Programme pflegen umfangreiche Datenbanken mit Datensätzen für Wechselrichter und Solarmodule.
+Diese kommerziellen Programme pflegen umfangreiche Datenbanken mit Datensätzen für Wechselrichter und Solarmodule. Aus den Datensätzen werden für die Simulation erforderliche Parameter der Modelle gespeist.
 
 Andere sind von spezifischen Herstellern (z.B. SolarEdge) und damit auf Komponenten jener festgelegt. 
 
@@ -24,3 +24,5 @@ Regelmäßig sind die über SAM verfügbaren Daten neuer als diejenigen, welche 
 Als alternative Datenquelle für pvLib steht mit pvfree eine Online-Datenbank zur Verfügung (https://pvfree.azurewebsites.net), die dort verfügbaren Daten sind jedoch mit wenigen Ausnahmen identisch mit denjenigen aus SAM.
 
 Es fehlt also an einfach nutzbaren Daten für pvLib im deutschen/europäischen Kontext.
+
+# Modelle pvLib
