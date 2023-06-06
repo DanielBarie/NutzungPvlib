@@ -2,8 +2,7 @@
 Ideen zur Nutzung von pvLib zwecks Simulation deutscher PV-Anlagen. In diesem Dokument werden zahlreiche Begriffe "einfach so" benutzt, ohne auf das für das Verständnis ggfs. erforderliche Studium der Grundlagen einzugehen. Hierzu empfiehlt sich beispielsweise die Lektüre der im Abschnitt Ressourcen aufgeführten Dokumente.
 
 # Motivation
-Eine PV-Anlage soll Strahlungsenergie der Sonne in elektrische Energie umwandeln. 
-PV-Anagen sind komplexe Systeme mit vielen einzelnen Komponenten. Das Verhalten der Komponenten muss einzeln und im Zusammenspiel betrachtet werden. Dazu sind umfangreichen Daten zu Solarmodulen und Wechselrichtern sowie Wetterdaten notwendig. Aufrund der Komplexität erfolgt vor dem Aufbau einer PV-Anlage regelmäßig eine Simulation, welche datenbasierte Modelle für die Komponenten erfordert.  
+Eine PV-Anlage soll Strahlungsenergie der Sonne in elektrische Energie umwandeln. Solche Anlagen sind komplexe Systeme und bestehen aus vielen einzelnen Komponenten. Das Verhalten der Komponenten muss einzeln und im Zusammenspiel betrachtet werden. Aufrund der Komplexität erfolgt vor dem Aufbau einer PV-Anlage regelmäßig eine Simulation, welche datenbasierte Modelle für die Komponenten erfordert. Dazu sind umfangreiche Daten zu Solarmodulen und Wechselrichtern sowie Wetterdaten notwendig
 
 Zum einen können für die Simulation kommerzielle, nicht frei zu nutzende Programme verwendet werden. Diese pflegen umfangreiche Datenbanken mit Datensätzen für Wechselrichter und Solarmodule und haben verschiedene Berechnungsmodelle integriert. Aus den Datensätzen der Datenbanken werden für die Simulation erforderliche Parameter der Modelle gespeist. Beispiele für derartige Programme sind:
 - PVsyst (Schweizer Programm), Lizenz für 600 CHF pro Jahr (https://www.pvsyst.com/shop-prices/)
