@@ -15,7 +15,7 @@ Frei verfügbare Tools (z.B. Solar-Planit, www.solar-planit.de) sind oftmals auf
 Eines der wenigen, frei verfügbaren Simulationstools mit großem Funktionsumfang und wissenschaftlich fundiertem Hintergrund ist pvLib. Ursprünglich als Toolbox für Matlab entstanden, bietet sich jetzt auch die Nutzung mit Python an: https://pvpmc.sandia.gov/applications/pv_lib-toolbox/
 
 # Probleme
-pvLib ist ein Projekt aus dem Dunstkreis des US-DoE (Department of Energy der Vereinigten Staaten von Amerika). Die im Programm mitgelieferten Daten für die Wechselrichtern und Solarmodulen zu Grunde liegenden Modelle stammen aus SAM (System Advisor Model), einem Projekt des US-amerikanischen National Renewable Energy Laboratory) (https://sam.nrel.gov/). Daher sind die im Programm verfügbaren Typen (und damit Modelltaten) von Wechselrichtern und Solarmodulen stark auf den amerikanischen Markt ausgelegt.
+pvLib ist ein Projekt aus dem Dunstkreis des US-DoE (Department of Energy der Vereinigten Staaten von Amerika). Die im Programm mitgelieferten Daten für die Wechselrichtern und Solarmodulen zu Grunde liegenden Modelle stammen aus SAM (System Advisor Model), einem Projekt des US-amerikanischen National Renewable Energy Laboratory) (https://sam.nrel.gov/). Daher sind die im Programm verfügbaren Typen (und damit Modelldaten) von Wechselrichtern und Solarmodulen stark auf den amerikanischen Markt ausgelegt.
 
 Regelmäßig sind die über SAM verfügbaren Daten neuer als diejenigen, welche in pvLib mitgelieferten werden (mehr/aktuellere Module und Wechselrichter). 
 
