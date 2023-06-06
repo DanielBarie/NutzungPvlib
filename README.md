@@ -32,10 +32,15 @@ Die einzelnen Solarmodule wiederum bestehen aus einer Vielzahl von Solarzellen. 
 
 Es sind also unterschiedliche Detaillierungsgrade der Modellierung möglich, zum einen nach betrachteten Komponenten und darüberhinaus nach Betrachtungstiefe der einzelnen Komponenten.
 
-## Solarmodule
+## Temperatureinfluss
+Die Temperatur von Solarzellen hat entscheidenden Einfluss auf die abrufbare Leistung. Bei höheren Temperaturen sinkt die verfügbare Leistung. Anschaulich: An einem kalten, klaren Frühlingstag erzeugt das Modul bei an der gleichen Position mehr Leistung als an einem ebenfalls klaren Sommertag. Um den jahreszeitlichen Verlauf zu erfassen, muss also die Temperatur der Solarzellen (und Module) berechnet werden. Diese berechnete Temperatur kann dann in den Modellen für die Module weiter verwendet werden.
 
-### Temperatureinfluss
-Die Temperatur der Solarmodule hat entscheidenden Einfluss auf die abrufbare Leistung. Bei höheren Temperaturen sinkt die verfügbare Leistung. Anschaulich: An einem kalten, klaren Frühlingstag erzeugt das Modul bei an der gleichen Position mehr Leistung als an einem ebenfalls klaren Sommertag. Um den jahreszeitlichen Verlauf zu erfassen, muss also die Temperatur der Module berechnet werden. Diese berechnete Temperatur kann dann in den Modellen für die Module weiter verwendet werden. 
+## Gesamte Arrays
+Für eine sehr einfache Betrachtung von PV-Anlagen kann die Verschaltung der Gesamtheit aller Solarmodule herangezogen werden. Das in pvLib hierzu hinterlegte Modell ist ```PVWatts```. Es baisert auf zwei Parametern:
+- der Nennleistung des Arrays und 
+- der Änderung der Nennleistung, abängig von der Temperatur der Solarzellen (Temperaturkoeffizient).
+
+## Solarmodule 
 
 ###  Kategorisierung der Modelle für Solarmodule
 Für die Solarmodule bietet pvLib zwei Simulationsmodelle an:
