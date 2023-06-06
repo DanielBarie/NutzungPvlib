@@ -24,9 +24,9 @@ Als alternative Datenquelle für pvLib steht mit pvfree eine Online-Datenbank zu
 Es fehlt also an einfach nutzbaren Daten für pvLib im deutschen/europäischen Kontext.
 
 # Modelle pvLib
-Die Simulation komplexer Syteme arbeitet mit Modellen der einzelnen Systemkomponenten; diese wiederum werden im Zusammenspiel betrachtet. Regelmäßig besteht eine PV-Anlage aus einer Vielzahl an einzelnen Solarmodulen und dem Wechselrichter (ggfs. auch mehreren Wechserichtern). Dazwischen verläuft eine Gleichstrom-Verkabelung. Nach dem Wechselrichter erfolgt i.d.R. der wechselstrommäßige Anschluss an das Energieverteilnetz. 
+Die Simulation komplexer Syteme arbeitet mit Modellen der einzelnen Systemkomponenten; diese wiederum werden im Zusammenspiel betrachtet. Regelmäßig besteht eine PV-Anlage aus einer Vielzahl an einzelnen Solarmodulen, die untereinander auf Gleichstromebene zu einem Array verschaltet werden, und dem Wechselrichter (ggfs. auch mehreren Wechserichtern). Dazwischen verläuft eine Gleichstrom-Verkabelung. Nach dem Wechselrichter erfolgt i.d.R. der wechselstrommäßige Anschluss an das Energieverteilnetz. 
 
-Als Minimum kann in der Simulation die Betrachtung der Solarmodule und des Wechselrichters erfolgen. Weitere Modelle können beispielsweise Verluste der Verkabelung oder Fehlanpassungen zwischen den Komponenten und / oder dem Energienetz nachbilden. 
+Als Minimum kann in der Simulation die Betrachtung der Gesamtheit der verschalteten Solarmodule und des Wechselrichters erfolgen. Weitere Modelle können beispielsweise die einzelnen Solarmodule, Verluste der Verkabelung oder Fehlanpassungen zwischen den Komponenten und / oder dem Energienetz nachbilden. 
 
 Die einzelnen Solarmodule wiederum bestehen aus einer Vielzahl von Solarzellen. Daher werden die Solarmodule für die Simulation teils wiederum in einzelne Zellen zerlegt. Dieser Schritt erfordert ein Modell für die Solarzellen, die im Grunde nichts weiter als Halbleiterdioden sind. 
 
