@@ -4,7 +4,8 @@ Nutzung von pvLib zur Simulation deutscher PV-Anlagen.
 # Motivation
 Verfügbare Programme zur Simulation von PV-Anlagen sind oft nicht frei zu nutzen. Beispiele dafür sind:
 - PVsyst (Schweizer Programm), Lizenz für 600 CHF pro Jahr (https://www.pvsyst.com/shop-prices/)
-- PV\*SOL (deutsches Programm), Lizenz einmalig 850 Euro plus Wartungsgebühr von 160€/Jahr (https://valentin-software.com/produkte/pvsol/)
+- PV\*SOL (deutsches Programm), Lizenz einmalig 850 Euro plus Wartungsgebühr von 160€/Jahr (https://valentin-software.com/produkte/pvsol/)  
+
 Diese kommerziellen Programme pflegen umfangreiche Datenbanken mit Datensätzen für Wechselrichter und Solarmodule.
 
 Andere sind von spezifischen Herstellern (z.B. SolarEdge) und damit auf Komponenten jener festgelegt. 
