@@ -32,9 +32,21 @@ Die einzelnen Solarmodule wiederum bestehen aus einer Vielzahl von Solarzellen. 
 
 Es sind also unterschiedliche Detaillierungsgrade der Modellierung möglich, zum einen nach betrachteten Komponenten und darüberhinaus nach Betrachtungstiefe der einzelnen Komponenten.
 
+## Solarmodule
+
+### Temperatureinfluss
+Die Temperatur der Solarmodule hat entscheidenden Einfluss auf die abrufbare Leistung. Bei höheren Temperaturen sinkt die verfügbare Leistung. Anschaulich: An einem kalten, klaren Frühlingstag erzeugt das Modul bei an der gleichen Position mehr Leistung als an einem ebenfalls klaren Sommertag. Um den jahreszeitlichen Verlauf zu erfassen, muss also die Temperatur der Module berechnet werden. Diese berechnete Temperatur kann dann in den Modellen für die Module weiter verwendet werden. 
+
+##  Kategorisierung der Modelle für Solarmodule
 Für die Solarmodule bietet pvLib zwei Simulationsmodelle an:
 - Sandia: Mit einer Vielzahl von Parametern basiert das Sandia Model auf zahlreichen Messungen realer Module und berücksichtigt u.a. die spektrale Zusammensetzung des einfallenden Lichts. Durch die Messung kompletter Module wird das Modul in seiner Gesamtheit (Verschaltung aller Dioden) beschrieben. Eine Anwendung des Modells ist nur möglich, wenn alle Parameter für ein Modul vorliegen. Die Übertragung des Modells auf andere (nicht vermessene) Module scheitert regelmäßig (https://www.pvsyst.com/help/sandia_model.htm).
-- CEC (California Energy Commission), sog. Six-Parameter-Model (weil sechs Parameter verwendet werden, um ein Modul zu charaktierisieren). Das Six-Parameter-Model basiert auf einem vorangehenden Five-Parameter-Model (De Soto Model). Beide Modelle beschreiben das Verhalten der Zell-Dioden in einem Solarmodul. Durch das Hinzufügen eines weiteren Parameters (von fünf auf sechs), versucht das CEC-Model temperaturabhängige Effekte besser zu erfassen. Durch die Bezugnahme auf die Charakteristik einzelner Dioden und Skalierung derselben auf ein ganzes Modul kann eine Abschätzung der für das Modell erforderlichen Parameter im Falle nicht katalogisierter Module Erfolg haben. 
+- CEC (California Energy Commission), sog. Six-Parameter-Model (weil sechs Parameter verwendet werden, um ein Modul zu charaktierisieren). Das Six-Parameter-Model basiert auf einem vorangehenden Five-Parameter-Model (De Soto Model). Beide Modelle beschreiben das Verhalten der Zell-Dioden in einem Solarmodul. Durch das Hinzufügen eines weiteren Parameters (von fünf auf sechs), versucht das CEC-Model temperaturabhängige Effekte besser zu erfassen. Mit der Bezugnahme auf die Charakteristik einzelner Dioden und Skalierung derselben auf ein ganzes Modul kann eine Abschätzung der für das Modell erforderlichen Parameter im Falle nicht katalogisierter Module Erfolg haben. 
+
+Grundsätzlich können die Modelle (neben Detailgrad) auch danach unterschieden werden, ob das Modell
+- eine durchgehende kontinuierliche IV-Kurve (Strom als Funktion der Spannung, I=f(U)) oder
+- eine punktbasierte, diskrete IV-Kurve   
+liefert. Das Sandia Modell liefert eine diskrete Kurve. Hingegen führt das CEC-Modell zu einer kontinuierlichen Kurve.
+
 
 # Ressourcen:
 - Arizona State University; https://www.pveducation.org/pvcdrom/welcome-to-pvcdrom 
