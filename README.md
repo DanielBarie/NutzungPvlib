@@ -19,7 +19,9 @@ pvLib ist ein Projekt aus dem Dunstkreis des US-DoE (Department of Energy der Ve
 
 Regelmäßig sind die über SAM verfügbaren Daten neuer als diejenigen, welche in pvLib mitgelieferten werden (mehr/aktuellere Module und Wechselrichter). 
 
-Als alternative Datenquelle für pvLib steht mit pvfree eine Online-Datenbank zur Verfügung (https://pvfree.azurewebsites.net), die dort verfügbaren Daten sind jedoch mit wenigen Ausnahmen identisch mit denjenigen aus SAM.
+Als alternative Datenquelle für pvLib steht mit pvfree eine Online-Datenbank zur Verfügung (https://pvfree.azurewebsites.net), die dort verfügbaren Daten sind jedoch mit wenigen Ausnahmen identisch mit denjenigen aus SAM. 
+
+Weder für die SAM (und damit pvLib) beiliegenden, noch die über pvFree zugänglichen Daten existiert ein Mechanismus, der eine einfache Zuarbeit neuer (ggfs. europaspezifischer) Datensätze ermöglicht.
 
 Es fehlt also an einfach nutzbaren Daten für pvLib im deutschen/europäischen Kontext.
 
