@@ -35,14 +35,23 @@ Es sind also unterschiedliche Detaillierungsgrade der Modellierung möglich, zum
 ## Temperatureinfluss
 Die Temperatur von Solarzellen hat entscheidenden Einfluss auf die abrufbare Leistung. Bei höheren Temperaturen sinkt die verfügbare Leistung. Anschaulich: An einem kalten, klaren Frühlingstag erzeugt das Modul bei an der gleichen Position mehr Leistung als an einem ebenfalls klaren Sommertag. Um den jahreszeitlichen Verlauf zu erfassen, muss also die Temperatur der Solarzellen (und Module) berechnet werden. Diese berechnete Temperatur kann dann in den Modellen für die Module weiter verwendet werden.
 
-## Gesamte Arrays
-Für eine sehr einfache Betrachtung von PV-Anlagen kann die Verschaltung der Gesamtheit aller Solarmodule herangezogen werden. Das in pvLib hierzu hinterlegte Modell ist ```PVWatts```. Es verwendet lediglich auf zwei Parameter:
-- der Nennleistung des Arrays und 
-- der Änderung der Nennleistung, abängig von der Temperatur der Solarzellen (Temperaturkoeffizient).
+## Gesamte Systeme (Zusammenfassung Modulfläche(n) und Wechselrichter)
+Für eine sehr einfache Betrachtung von PV-Anlagen kann die Verschaltung der Gesamtheit aller Solarmodule herangezogen werden. Das in pvLib hierzu hinterlegte Modell ist ```PVWatts```. Es verwendet lediglich vier Parameter:
+- der Gleichstrom-Nennleistung der Gesamtheit der Module,
+- Verlustfaktor für die Uwandlung DC-AC,
+- Ausrichtung und
+- Neigung der Modulfläche.  
+Das Modell beruht im wesentlichen auf hinterlegten Annahmen die Module und Wechselrichter betreffend. 
 
-## Solarmodule 
+## Komponentenbasierte Betrachtung der Systeme
+Neben der Zusammenfasssung aller Komponenten (PVWatts) liegt die eigentliche Stärke von pvLib in der komponentenweisen Betrachtung von PV-Anlagen. Dazu stehen das 
+- Sandia Array Performance Model (SAPM) oder
+- PVsyst Model  
+zur Verfügung.
 
-###  Kategorisierung der Modelle für Solarmodule
+### Solarmodule 
+
+####  Kategorisierung der Modelle für Solarmodule
 Für die Solarmodule bietet pvLib zwei Simulationsmodelle an:
 - Sandia: Mit einer Vielzahl von Parametern basiert das Sandia Model auf zahlreichen Messungen realer Module und berücksichtigt u.a. die spektrale Zusammensetzung des einfallenden Lichts. Durch die Messung kompletter Module wird das Modul in seiner Gesamtheit (Verschaltung aller Dioden) beschrieben. Eine Anwendung des Modells ist nur möglich, wenn alle Parameter für ein Modul vorliegen. Die Übertragung des Modells auf andere (nicht vermessene) Module scheitert regelmäßig (https://www.pvsyst.com/help/sandia_model.htm).
 - CEC (California Energy Commission), sog. Six-Parameter-Model (weil sechs Parameter verwendet werden, um ein Modul zu charaktierisieren). Das Six-Parameter-Model basiert auf einem vorangehenden Five-Parameter-Model (De Soto Model). Beide Modelle beschreiben das Verhalten der Zell-Dioden in einem Solarmodul. Durch das Hinzufügen eines weiteren Parameters (von fünf auf sechs), versucht das CEC-Model temperaturabhängige Effekte besser zu erfassen. Mit der Bezugnahme auf die Charakteristik einzelner Dioden und Skalierung derselben auf ein ganzes Modul kann eine Abschätzung der für das Modell erforderlichen Parameter im Falle nicht katalogisierter Module Erfolg haben. 
