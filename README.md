@@ -62,6 +62,7 @@ Das Modell beruht im wesentlichen auf hinterlegten Annahmen die Module und Wechs
 Neben der Zusammenfasssung aller Komponenten (PVWatts) liegt die eigentliche Stärke von pvLib in der komponentenweisen Betrachtung von PV-Anlagen. Dazu stehen das 
 - Sandia Array Performance Model (SAPM) oder
 - PVsyst Model  
+
 zur Verfügung.
 
 ### Solarmodule 
