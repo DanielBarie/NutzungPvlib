@@ -14,7 +14,7 @@ Frei verfügbare Tools (z.B. Solar-Planit, www.solar-planit.de) sind oftmals auf
 
 Eines der wenigen, frei verfügbaren Simulationstools mit großem Funktionsumfang und wissenschaftlich fundiertem Hintergrund ist pvLib. Ursprünglich als Toolbox für Matlab entstanden, bietet sich jetzt auch die Nutzung mit Python an: https://pvpmc.sandia.gov/applications/pv_lib-toolbox/
 
-Am Beispiel pvLib wird deutlich, wie die unterschiedlichen Daten für eine recht detaillierte Simulation der erzeugten Energiemengen verwendet werden:
+Am Beispiel pvLib wird deutlich, wie die unterschiedlichen Daten für eine recht detaillierte Simulation der erzeugten Energiemengen (ohne Verluste beispielsweise durch Verschmutzung/Verschattung oder Schnickschnack wie Nachführung) verwendet werden:
 ![rough sketch, data into pvlib for results](grobskizze_funktion_pvlib.png "pvLib Data Sources and Processing")  
 Leserichtung von links nach rechts / oben nach unten; pvLib benötigt:
 - Angaben zu den Solarmodulen
