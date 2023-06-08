@@ -21,6 +21,7 @@ Leserichtung von links nach rechts / oben nach unten; pvLib benötigt:
 - Abgaben zum Wechselrichter
 - Angaben zur Installation der Module (Ausrichtung, Winkel)
 - Ort.  
+
 Die Ortsdaten wiederum werden verwendet, um Wetterdaten abzurufen.  
 Farblich gleiche Pfeile sind der Versuch, die Verwendung der jeweiligen Daten in den unterschiedlichen Schritten der Simulation zu kennzeichnen.   
 Im wesentlichen werden aus den Eingabedaten zunächst die Modultemperaturen und die effektiv einfallende Strahlung berechnet.  
